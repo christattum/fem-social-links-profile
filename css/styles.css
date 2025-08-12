@@ -27,6 +27,16 @@ body {
     height: 100vh;
 }
 
+.avatar img {
+    max-width: 8.8rem;
+    border-radius: 100%;
+}
+
 .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     background-color: var(--color-grey-800);
 }
+
