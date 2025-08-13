@@ -5,9 +5,11 @@
     --color-grey-800: hsl(0, 0%, 12%);
     --color-grey-900: hsl(0, 0%, 8%);
 
+    --spacing-500: 4rem;
     --spacing-300: 2.4rem;
     --spacing-200: 1.6rem;
-    --spacing-100: 0.8.rem;
+    --spacing-150: 1.2rem;
+    --spacing-100: 0.8rem;
 }
 
 html {
@@ -37,13 +39,18 @@ body {
 }
 
 .card {
+    box-sizing: border-box;
+    max-width: 384px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex: 1 0 0;
+    padding: var(--spacing-500);
     text-align: center;
     gap: var(--spacing-300);
     background-color: var(--color-grey-800);
     font-size: 1.4rem;
+    border-radius: 12px;
 }
 
 .name {
@@ -58,6 +65,10 @@ body {
     font-weight: 600;
 }
 
+.location {
+    color: var(--color-green);
+}
+
 .location, .links {
     font-weight: 700;
 }
@@ -66,8 +77,13 @@ body {
     display: flex;
     flex-direction: column;
     gap: var(--spacing-200);
+    align-self: stretch;
 }
 
 .links a {
+    color: var(--color-white);
     background-color: var(--color-grey-700);
+    text-decoration: none;
+    padding: var(--spacing-150);
+    border-radius: 8px;
 }
