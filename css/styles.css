@@ -4,6 +4,10 @@
     --color-grey-700: hsl(0, 0%, 20%);
     --color-grey-800: hsl(0, 0%, 12%);
     --color-grey-900: hsl(0, 0%, 8%);
+
+    --spacing-300: 2.4rem;
+    --spacing-200: 1.6rem;
+    --spacing-100: 0.8.rem;
 }
 
 html {
@@ -37,6 +41,33 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: var(--spacing-300);
     background-color: var(--color-grey-800);
+    font-size: 1.4rem;
 }
 
+.name {
+    font-size: 2.4rem;
+}
+
+.title div {
+    line-height: 1.5;
+}
+
+.name {
+    font-weight: 600;
+}
+
+.location, .links {
+    font-weight: 700;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-200);
+}
+
+.links a {
+    background-color: var(--color-grey-700);
+}
