@@ -83,3 +83,8 @@ body {
     padding: var(--spacing-150);
     border-radius: 8px;
 }
+
+.links a:hover {
+    background-color: var(--color-green);
+    color: var(--color-grey-700);
+}
