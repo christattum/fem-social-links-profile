@@ -39,8 +39,7 @@ body {
 }
 
 .card {
-    box-sizing: border-box;
-    width: 384px;
+    width: 304px;
     display: flex;
     flex-direction: column;
     padding: var(--spacing-500);
